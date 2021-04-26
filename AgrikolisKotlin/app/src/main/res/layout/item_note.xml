@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+    >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            style="@style/NoteTitleFont"
+            tools:text="Note 1"
+            />
+
+        <TextView
+            android:id="@+id/excerpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:ellipsize="end"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod sem mauris, sed scelerisque lectus pulvinar quis. Curabitur vitae facilisis."
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
